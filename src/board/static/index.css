@@ -1,0 +1,97 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    356deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 12%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container_box {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  margin: 10vh auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgb(46, 46, 46);
+}
+.todo_heading {
+  margin-bottom: 20px;
+}
+.container_input {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.container_input input:nth-child(1) {
+  width: 75%;
+}
+.container_input input:nth-child(2) {
+  width: 20%;
+  background-color: green;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  margin: auto 1%;
+  transition: 0.5s;
+}
+.container_input input:nth-child(2):hover {
+  box-shadow: 2px 4px 8px gray;
+}
+
+.todos_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.single_todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(222, 222, 222);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.single_todo p {
+  text-align: center;
+  margin: 2%;
+}
+.single_todo input {
+  width: 20%;
+  border: none;
+  background-color: rgb(198, 0, 0);
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.single_todo input:hover {
+  box-shadow: 2px 4px 8px gray;
+}
+p {
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}

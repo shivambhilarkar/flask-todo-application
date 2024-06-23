@@ -1,0 +1,7 @@
+<div class="single_todo">
+  <form action="/delete" method="POST">
+    <p>{{ todo_message }}</p>
+    <input type="hidden" value="{{ todo_message }}" name="todo_to_delete" />
+    <input type="submit" value="Delete" />
+  </form>
+</div>

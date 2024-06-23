@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }} {% endblock title %} 
+
+{% block body_content %}
+    
+    <div class="container_box">
+        <h1 class="todo_heading">Todo App</h1>
+        {% include 'add_todo.html' %}   
+        
+        <div class="todos_container">
+            {% for todo_msg in all_todos %}
+
+                {% with todo_message=todo_msg  %}
+                    {% include 'single_todo.html' %}
+                {% endwith %}
+                
+            {% endfor %}
+
+        </div>
+    </div>
+    
+{% endblock %}
+
+
